@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/Notemap.css"/>
+    <title>Notemap</title>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar-fixed">
+    <nav class="teal ">
+        <div class="nav-wrapper container"><a href="#!" class="brand-logo center">Notemap</a>
+            <a href="#!" data-activates="nav-mobile" id="navmenuclick" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+<!-- Fixed sideNav -->
+<ul id="nav-mobile" class="side-nav">
+    <li><a href="#!" data-show="tabNoteMaken"><i class="material-icons">note_add</i>Notitie maken</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+	<li><a href="#!" data-show="tabNotitieMap"><i class="material-icons">map</i>NotitieMap</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+	    <li><a href="#!" data-show="tabNotities"><i class="material-icons">event_note</i>Notities</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+	 <li><a href="#!" data-show="tabInfo"><i class="material-icons">info</i>Info</a></li>
+</ul>
+<!-- Grid -->
+
+<div class="row spa" id="tabNoteMaken">
+	<div id="Noteform">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s12">
+				<textarea id="Notitie" class="materialize-textarea"></textarea>
+				<label for="Notitie">Notitie</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+				<input disabled value="Locatie" id="disabled" type="text" class="validate">
+				<label for="disabled">Locatie</label>
+				</div>
+			</div>
+		</form>  
+		<a class="waves-effect waves-light btn" id="herladen">Locatie herladen</a>
+		<a class="waves-effect waves-light btn" id="opslaan">Opslaan</a>
+		</div>
+	<div id="mapcontainer">
+	</div>
+</div>
+<div class="row spa" id="tabNotitieMap">
+ <div id="map_locaties">
+ </div>
+</div>
+<div class="container">
+<div class="row spa" id="tabNotities">
+</div>
+<div class="row spa" id="tabInfo">
+<h5>Over de Notemap</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus eros, rutrum et justo ut, pulvinar vestibulum risus. Etiam facilisis quam sit amet sapien fermentum, a lacinia ex eleifend. Sed placerat dui eu consectetur luctus. Fusce consectetur justo eget felis luctus auctor. Proin sed quam pretium, vulputate nisl ut, tempus massa. Nullam dui ex, viverra vitae dapibus eu, luctus ac nunc. Cras non eros sed urna facilisis semper a eu nulla. Nam pulvinar dolor metus. Nam facilisis lectus vel rhoncus mattis. Aenean malesuada arcu non commodo consequat. Ut placerat, sapien sed interdum aliquet, dui lorem blandit turpis, vitae iaculis quam eros ut massa. Pellentesque auctor suscipit interdum. Mauris egestas aliquam blandit. In et ultrices nisl. Curabitur non vulputate eros. Sed maximus at sem sed finibus. </p>
+<h5>Over mij</h5>
+<p>Ik ben Jules</p>
+<h6>Contact</h6>
+<a tel:"iets">tel: invullen</a></br>
+<a sms:"iets">sms: invullen</a></br>
+<a mailto:"iets">mail: invullen</a></br>
+</div>
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/notitieopslag.js"></script>
+<script src="js/notemap.js"></script>
+<script src="js/mapmaken.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
