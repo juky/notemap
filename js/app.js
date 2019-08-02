@@ -47,7 +47,7 @@ $('.side-nav a').click(function(){
 	$('#mapcontainer').append('<div class="progress"><div class="indeterminate center"></div></div>');
 	var onSuccess = function(position) {
 		const latlng =  {"lat": position.coords.latitude, "lng":position.coords.longitude}
-			$.ajax({ url:"https://maps.googleapis.com/maps/api/geocode/json?latlng=" +  position.coords.latitude + "," + position.coords.longitude + "&key=AIzaSyDyO20qtDtJ-952AiKXvdcLtIJQ1dub2Is" 
+			$.ajax({ url:"https://maps.googleapis.com/maps/api/geocode/json?latlng=" +  position.coords.latitude + "," + position.coords.longitude + "&key=XXXX" 
 			, success: function(geolocation){
 				lat = position.coords.latitude ;
 				lng = position.coords.longitude;
